@@ -327,7 +327,7 @@ checkfn:
 	shl %cl, %r13d # create real mask and store in edi
 	andl %r13d, %r12d # 101010 bitmasks only for specified bits, if they are all 1's 
 	# apply edi mask to r12d to individual bits
-	xor  %r13d, %r12d # should be eaqual making r12d zero
+	xor  %r13d, %r12d # should be equal making r12d zero
 	# xor to test if all bits are set
 	jz printwins
 	ret
